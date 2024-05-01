@@ -1,0 +1,35 @@
+<!--
+    Title : Uppercase const?
+    Lang: JavaScript
+    Day: 20
+
+    Here we have a constant birthday for the date, and also the age constant.
+    The age is calculated from birthday using someCode(), which means a function call that we didn’t explain yet (we will soon!), but the details don’t matter here, the point is that age is calculated somehow based on the birthday.
+
+    Would it be right to use upper case for birthday? For age? Or even for both?
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Variables 3.0v</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../../Hello World/imgs/images.png">
+    </head>
+
+    <body>
+        <script>
+            // Examine the following code based on explaination above
+            const birthday = '18.04.1982';
+            const age = someCode(birthday);
+
+            // Would it be right to use upper case for birthday? For age? Or even for both?
+
+            const BIRTHDAY = '18.04.1982'; // this is possible cause the date of birth NEVER changes, so the script will be in "hard-coded" era
+            const AGE = someCode(BIRTHDAY);  // The age changes over the years, and evaluated in runtime, so  is a bit “less of a constant” than birthday.
+
+            // const age = someCode(birthday); // Keep lower case for it
+
+        </script>
+    </body>
+</html>
