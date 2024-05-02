@@ -1,0 +1,28 @@
+<!--
+    Title: The postfix and prefix forms
+    Lang: JavaScript
+    Day: 21
+
+    What are the final values of all variables a, b, c and d after the code below?
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../../Hello World/imgs/images.png">
+        <title>Postfix & Prefix</title>
+    </head>
+    <body>
+        <script>
+            let a = 1, b = 1;
+
+            let c = ++a; // at firt, this will add the value '1' to the variable 'a' value then print it
+            console.log(c); // Output: 2
+
+            let d = b++; // this will print the variable 'b' value without any addition operation 
+            console.log(d) // Output: 1
+        </script>
+    </body>
+</html>
