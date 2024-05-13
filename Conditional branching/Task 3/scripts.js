@@ -1,9 +1,11 @@
-let value = prompt("Enter the number : ")
+let input = prompt("Enter the number : ")
 
-if (value > 0) {
-    alert(1)
-}  else if (value < 0) {
-    alert(-1)
+if (input > 0) {
+    alert(1);
+
+}  else if (input < 0) {
+    alert(-1);
+
 } else {
-    alert(0)
+    alert(0);
 }
