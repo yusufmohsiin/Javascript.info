@@ -24,6 +24,10 @@
 
             // What is the code below going to output?
                alert( alert(1) || 2 || alert(3) ); // first, print 1 then 2
+
+            // What will the result be?
+               alert( null || 2 && 3 || 4 ); // AND has precedence than OR, so 2 && 3 excutes first
+                                             // the result will be 3
         </script>
     </body>
 </html>
